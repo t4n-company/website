@@ -3,116 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T4n Company</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <!-- Font Awesome untuk Ikon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>T4n Tech | Company</title>
+    <meta name="description" content="T4n Tech adalah Company berbasis komunitas yang berfokus pada pengembangan Open-Source, Kemudahan, dan Transparan.">
+    <link rel="icon" href="assets/logo/t4n-tech.svg" type="image/svg+xml">
+    
+    <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- File CSS Eksternal -->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-
-    <header class="header">
-        <nav class="navbar">
-            <a href="#" class="nav-logo">T4n Company</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="page/01galery.html" class="nav-link">Galeri</a></li>
-
-                <li class="nav-item"><a href="page/02product.html" class="nav-link">Product</a></li>
-
-                <li class="nav-item"><a href="page/03news.html" class="nav-link">News</a></li>
-            </ul>
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="brand">T4n <span>Tech</span></a>
+            
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a class="nav-link active" href="#">Home</a></li>
+                    <li><a class="nav-link" href="page/gallery.html">Gallery</a></li>
+                    <li><a class="nav-link" href="page/product.html">Product</a></li>
+                    <li><a class="nav-link" href="page/news.html">News</a></li>
+                </ul>
+            </nav>
+            
             <div class="social-icons">
-                <a href="https://github.com/t4n-company" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank" title="GitLab"><i class="fab fa-gitlab"></i></a>
-                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
-                <a href="#" target="_blank" title="Reddit"><i class="fab fa-reddit-alien"></i></a>
+                <a href="https://github.com/t4n-tech/" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://gitlab.com/t4n-tech" aria-label="GitLab"><i class="fab fa-gitlab"></i></a>
+                <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                <a href="#" aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a>
+                <a href="https://www.youtube.com/channel/UCPI_EsKI4C-XdoB5LKaBOiw" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/t4n_tech/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
-        <section id="beranda" class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Membangun Teknologi <span>Untuk Kebersamaan</span></h1>
-                <p class="hero-subtitle">Dari Bangsa Untuk Bangsa, Dari Komunitas Untuk Komunitas</p>
-            </div>
-        </section>
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <div class="container hero-content">
+                <h1>Inovasi Tanpa Batas<br><span class="text-gradient">Masa Depan Digital</span></h1>
+                <p>Dari Bangsa Untuk Bangsa, Dari Komunitas Untuk Komunitas</p>
+                <div class="cta-group">
+                    <a href="page/product.html" class="btn btn-primary">Explore Products</a>
+                </div>
 
-        <section id="tujuan" class="section section-bg">
-            <div class="container">
-                <h2 class="section-title">Tujuan Kami</h2>
-                <p class="section-subtitle">Visi kami di balik setiap baris kode yang kami tulis.</p>
-                <div class="goals-grid">
-                    <div class="goal-card">
-                        <div class="goal-icon">🛠️</div>
-                        <h3>Kendali Penuh atas Sistem</h3>
-                        <p>Kami mengembangkan teknologi yang memberikan kendali ke penggunanya, bukan mengunci mereka pada ekosistem atau vendor tertentu.</p>
+                <!-- Visi & Misi -->
+                <div class="vision-mission">
+                    <div class="vm-card">
+                        <i class="fas fa-eye fa-2x" style="color: var(--accent-gold); margin-bottom: 20px;"></i>
+                        <h3>Visi Kami</h3>
+                        <p>Mengubah teknologi yang rumit menjadi pengalaman yang sederhana, aman, dan bermakna, dengan menjembatani kompleksitas sistem modern agar dapat dipahami, dipercaya, dan dimanfaatkan oleh individu, komunitas, serta organisasi.</p>
                     </div>
-
-                    <div class="goal-card">
-                        <div class="goal-icon">🧠</div>
-                        <h3>VISI</h3>
-                        <p>Menciptakan ekosistem teknologi terbuka yang bertahan lama, relevan secara global, dan dibangun oleh orang-orang yang benar-benar memahami sistem yang mereka buat.</p>
-                    </div>
-
-                    <div class="goal-card">
-                        <div class="goal-icon"><i class="fa-solid fa-people-group"></i></div>
-                        <h3>Dibangun oleh Komunitas Teknis</h3>
-                        <p>T4n Company tumbuh dari komunitas yang berfokus pada kontribusi nyata, bukan hierarki atau pencitraan.</p>
+                    <div class="vm-card">
+                        <i class="fas fa-rocket fa-2x" style="color: var(--accent-purple); margin-bottom: 20px;"></i>
+                        <h3>Misi Kami</h3>
+                        <p>1. Menyederhanakan sesuatu yang kompleks tanpa mengorbankan.</p>
+                        <p>2. Membangun kepercayaan melalui teknologi yang terbuka</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="pengembang" class="section section-compact">
+        <!-- PROFILE SECTION -->
+        <section id="founder" class="section section-compact">
             <div class="container">
-                <h2 class="section-title">Tim Pengembang</h2>
-                <p class="section-subtitle">Di balik T4n Company.</p>
+                <h2 class="section-title">T4n Tech</h2>
+                <p class="section-subtitle">Tim T4n Tech</p>
                 <div class="developers-grid">
                     <div class="developer-card">
                         <img src="https://github.com/gh0st4n.png" alt="Gh0sT4n's Profile Picture" class="developer-img">
-                        <h3>Gh0sT4n</h3>
-                        <p>Founder | Lead Developer</p>
-                        <a href="https://github.com/gh0st4n" target="_blank" class="developer-link">GitHub</a>
-                        <a href="#"> | </a>
-                        <a href="https://gh0st4n.github.io/gh0st4n-web/" target="_blank" class="developer-link">Portofolio</a>
-                    </div>
-
-                    <div class="developer-card">
-                        <div class="developer-img-placeholder">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                            </svg>
+                        <h3>Gh0sT4n . Muhammad Luthfi Fakhmar</h3>
+                        <p>Founder T4n Tech & IT</p>
+                        <div class="developer-socials">
+                            <a href="https://github.com/gh0st4n" target="_blank" class="developer-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <span class="developer-separator">•</span>
+                            <a href="https://instagram.com/gh0st4n_" target="_blank" class="developer-link">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
                         </div>
-                        <h3>User Anonim</h3>
-                        <p>Kontributor</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <!-- FOOTER -->
+    <footer>
         <div class="container">
-            <p>&copy; 2026 T4n Company.</p>
+            <p>&copy; 2026 T4n Tech. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Lightbox for Gallery -->
-    <div id="lightbox" class="lightbox">
-        <span class="close-lightbox">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-    </div>
-
+    <!-- File JavaScript Eksternal -->
     <script src="assets/script.js"></script>
 </body>
 </html>
